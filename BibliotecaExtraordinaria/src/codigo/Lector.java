@@ -2,6 +2,10 @@ package codigo;
 
 
 //version 1.2
+/**
+ * @author idel2
+ * @version 1.3
+ */
 public class Lector {
 
     private int idSocio;

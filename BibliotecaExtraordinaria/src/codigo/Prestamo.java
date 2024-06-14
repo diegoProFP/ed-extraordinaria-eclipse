@@ -77,7 +77,7 @@ public class Prestamo {
     //descripcion de metodo
     //parametros
     //retorno
-    @Deprecated(since = "1.0")
+    @Deprecated
     public double calcularMultaPrestamo() {
 
         if (diaDevolucion < 1 || diaDevolucion > 31 || mesDevolucion < 0 || mesDevolucion > 12) {

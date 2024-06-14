@@ -62,7 +62,15 @@ class PrestamoTest {
 
 	}
 	
-
+	@Test
+	@DisplayName("")
+	void test8() {
+		Lector L1 = new Lector(1, "Pedro", "223313", "PedroMiamigo@gmail", "12345");
+		EjemplarLibro E1 = new EjemplarLibro("2312", "uno", "pepe", 1978);
+		Prestamo p1 = null;
+		assertThrows(NullPointerException.class, () -> p1.devolverPrestamo(1, 2));
+		
+	}
 	
 	
 	

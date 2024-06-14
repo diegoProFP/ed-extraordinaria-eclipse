@@ -2,6 +2,12 @@ package codigo;
 
 
 //version 1.2
+/**
+ * clase lector en la que se guardan los atributos idSocio, dni, nombre, email y los metodos para
+ * validar el codigo postal y el email
+ * @author idel2
+ * @version 1.3
+ */
 public class Lector {
 
     private int idSocio;
@@ -33,10 +39,11 @@ public class Lector {
         this.email = email;
     }
 
-    //descripcion de metodo
-    //parametros
-    //retorno
-    //está desde la 1.1
+    /**
+     * Metodo para validar el codigo postal del lector
+     * @param postalCode
+     * @return true si el codigo postal es valido, false si el codigo postal es invalido
+     */
     public boolean validarCodigoPostal(String postalCode) {
         if (postalCode == null || postalCode.length() != 5) {
             return false;
@@ -51,10 +58,11 @@ public class Lector {
         return true;
     }
 
-    //descripcion de metodo
-    //parametros
-    //retorno
-    //está desde la 1.1
+    /**
+     * Este metodo valida si el emaildel lector es valido
+     * @param email
+     * @return false si no es valido y true si es valido
+     */
     public boolean validarEmail(String email) {
         if (email == null || email.length() < 3 || !email.contains("@")) {
             return false;

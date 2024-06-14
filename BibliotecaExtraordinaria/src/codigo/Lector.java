@@ -1,7 +1,9 @@
 package codigo;
 
 
-//version 1.2
+/**
+ * @version1.0.0
+ */
 public class Lector {
 
     private int idSocio;
@@ -28,10 +30,16 @@ public class Lector {
         this.email = email;
     }
 
-    //descripcion de metodo
-    //parametros
-    //retorno
-    //está desde la 1.1
+    /**
+     * este metodo realiza la comprovacion del codigo de postal, si no cumples las codiciones 
+     * necesarias no se realizara el proceso.
+     * 
+     * 
+     * 
+     * @param postalCode
+     * @return devuelve un verdadero en el caso de que el codigo postal se compla
+     * @since 0.0.5
+     */
     public boolean validarCodigoPostal(String postalCode) {
         if (postalCode == null || postalCode.length() != 5) {
             return false;
@@ -46,10 +54,12 @@ public class Lector {
         return true;
     }
 
-    //descripcion de metodo
-    //parametros
-    //retorno
-    //está desde la 1.1
+    /**este metodo es similar al mencionado @see validarCodigoPostal donde el proceso es similar, pero ahora comprovando
+     * que el email este bien
+     * @param email
+     * @return devuelve verdadero en casa de que el email este bien
+     * @since 0.0.2
+     */
     public boolean validarEmail(String email) {
         if (email == null || email.length() < 3 || !email.contains("@")) {
             return false;

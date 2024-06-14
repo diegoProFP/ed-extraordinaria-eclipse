@@ -32,11 +32,14 @@ public class Prestamo {
 
 
 
-    //descripcion de metodo
-    //parametros
-    //retorno
-    //está desde la 1.2
-    //lanza la IllegalArgumentException
+    /**
+     * este metodo realiza la devolucion de un prestamo, si la fecha esta mal devolvera un false,
+     * sino, se hace a la perfección.
+     * 
+     * @param diaDev
+     * @param mesDev
+     * @return
+     */
     public double devolverPrestamo(int diaDev, int mesDev) {
 
         if (diaDev < 1 || diaDev > 30 || mesDev < 1 || mesDev > 12) {
@@ -73,11 +76,13 @@ public class Prestamo {
     }
 
 
-    //deprecado desde la version 1.0
-    //descripcion de metodo
-    //parametros
-    //retorno
-    @Deprecated(since = "1.0")
+    /**
+     * este metodo calcula la multa del prestamo segun sea el dia de tardancia.
+     * @deprecated este metodo esta deprecado y se hara una mejora en el futuro
+     * @return -1
+     * @return devuelve tru en casa de que se haga hecho bien la operacion
+     */
+    @Deprecated
     public double calcularMultaPrestamo() {
 
         if (diaDevolucion < 1 || diaDevolucion > 31 || mesDevolucion < 0 || mesDevolucion > 12) {

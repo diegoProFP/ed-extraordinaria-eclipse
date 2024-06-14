@@ -1,6 +1,9 @@
 package codigo;
 
-//version 1.2
+/**
+ * @version 1.0.0
+ * 
+ */
 public class EjemplarLibro {
 
     private String isbn;
@@ -22,6 +25,15 @@ public class EjemplarLibro {
     //parametros
     //retorno
     //está desde la 1.0
+    
+    /**
+     * 
+     * este metodo realiza la comprovacion si es valido el isbn, si es null se terminara y devolvera un falso, en el caso de
+     * de que este todo bien seguira su camino camculando la variable digit
+     * * @param recibe el paramentro isbn 
+     * @return en el caso que salte la excepcion devolvera un valor false, sino, devolvera el valor total
+     * @since 0.5.0
+     */
     public static boolean isValidISBN(String isbn) {
         if (isbn == null) {
             return false;

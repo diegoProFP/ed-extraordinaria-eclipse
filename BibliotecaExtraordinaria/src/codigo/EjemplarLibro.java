@@ -1,7 +1,8 @@
 package codigo;
 
 /**
- *
+ *clase ejemplar libro en el que se guardan las carcteristicas del libro y los 
+ *metodos para validar isbn
  * @author idel2
  * @version 1.3
  */

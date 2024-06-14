@@ -1,6 +1,10 @@
 package codigo;
 
-//version 1.2
+/**
+ * clase prestamo que sirve para ver si tiene que multar al lector por prestamo tardio
+ * @author idel2
+ * @version 1.3
+ */
 public class Prestamo {
 
     private static final double MULTA_DIARIA_DEVOLUCION_TARDIA = 1.50;
@@ -32,11 +36,12 @@ public class Prestamo {
 
 
 
-    //descripcion de metodo
-    //parametros
-    //retorno
-    //está desde la 1.2
-    //lanza la IllegalArgumentException
+    /**
+     * Clase devolver Prestamo en el que se mira si te pasas del periodo y si es asi se te multa
+     * @param diaDev
+     * @param mesDev
+     * @return false no hay penalizacion y return true se te penbaliza segun los dias que te pases de devolucion
+     */
     public double devolverPrestamo(int diaDev, int mesDev) {
 
         if (diaDev < 1 || diaDev > 30 || mesDev < 1 || mesDev > 12) {
@@ -73,10 +78,11 @@ public class Prestamo {
     }
 
 
-    //deprecado desde la version 1.0
-    //descripcion de metodo
-    //parametros
-    //retorno
+    /**
+     * 
+     * @return
+     * @deprecated metodo obsoleto es mejor usar el metodo devolverPrestamo
+     */
     @Deprecated(since = "1.0")
     public double calcularMultaPrestamo() {
 

@@ -1,6 +1,10 @@
 package codigo;
 
-//version 1.2
+/**
+ *
+ * @author idel2
+ * @version 1.3
+ */
 public class EjemplarLibro {
 
     private String isbn;
@@ -18,10 +22,11 @@ public class EjemplarLibro {
         this.anyoPublicacion = anyoPublicacion;
     }
 
-    //descripcion de metodo
-    //parametros
-    //retorno
-    //está desde la 1.0
+    /**
+     * Metodo para validar el isbn
+     * @param isbn
+     * @return true si el isbn es valido y false si no es valido
+     */
     public static boolean isValidISBN(String isbn) {
         if (isbn == null) {
             return false;
